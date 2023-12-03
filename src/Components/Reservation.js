@@ -1,7 +1,10 @@
 export default function Reservation({reservation}) {
     return <>
-    <div>
-    {reservation.name}
-    </div>
+    <tr>
+       <td>{reservation.name}</td>
+       <td>{reservation.party}</td>
+       <td>{reservation.time}</td>
+       <td>{reservation.occasion}</td>
+    </tr>
     </>
 }

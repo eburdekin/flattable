@@ -6,7 +6,7 @@ export default function ReservationForm() {
         <input type="text" placeholder="Time"></input>
         <input type="text" placeholder="Occasion"></input>
         <input type="text" placeholder="Restrictions"></input>
-        <input type="submit"></input>
+        <input type="submit" />
         </form>
     </>
 }
