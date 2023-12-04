@@ -1,20 +1,39 @@
 {
-    "reservations" : [
+  "reservations": [
     {
-        "id": 0,
-        "name": "Eileen",
-        "party": 5,
-        "time": "07:00",
-        "occasion": "birthday",
-        "restrictions": "none"
+      "id": 0,
+      "name": "Eileen",
+      "party": 5,
+      "time": "07:00",
+      "occasion": "birthday",
+      "restrictions": "none"
     },
     {
-        "id": 1,
-        "name": "David",
-        "party": 2,
-        "time": "07:00",
-        "occasion": "anniversary",
-        "restrictions": "vegan"
+      "id": 1,
+      "name": "David",
+      "party": 2,
+      "time": "07:00",
+      "occasion": "anniversary",
+      "restrictions": "vegan"
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "Woody",
+      "party": "5",
+      "time": "12:00",
+      "occasion": "graduation",
+      "restrictions": "candy",
+      "id": 3
+    },
+    {
+      "name": "Woody",
+      "party": "5",
+      "time": "12:00",
+      "occasion": "graduation",
+      "restrictions": "candy",
+      "id": 4
     }
-]
+  ]
 }
