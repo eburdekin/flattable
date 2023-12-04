@@ -17,23 +17,12 @@
       "restrictions": "vegan"
     },
     {
-      "id": 2
-    },
-    {
       "name": "Woody",
       "party": "5",
       "time": "12:00",
       "occasion": "graduation",
       "restrictions": "candy",
       "id": 3
-    },
-    {
-      "name": "Woody",
-      "party": "5",
-      "time": "12:00",
-      "occasion": "graduation",
-      "restrictions": "candy",
-      "id": 4
     }
   ]
 }

@@ -26,11 +26,21 @@ export default function Page() {
     }).then(res => res.json()).then(data => setReservations([...reservations, data]))
   }
 
+  const handleDelete = (id) => {
+    fetch(`${API}/${id}`, {
+      method: 'DELETE',
+      headers: headers
+    })
+    .then(
+      setReservations(reservations.filter(reservation => reservation.id !== id))
+    )
+  }
+
     return (
         <>
         <Header />
         <ReservationForm handleAddSubmit={handleAddSubmit}/>
-        <Reservations reservations={reservations} />
+        <Reservations reservations={reservations} handleDelete={handleDelete} />
         </>
     )
 }
