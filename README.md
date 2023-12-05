@@ -4,7 +4,7 @@
 
 ## Example User Flow
 
-![User flow](/userflow.png)
+![User flow](./userflow.png)
 
 ## Deliverables
 
