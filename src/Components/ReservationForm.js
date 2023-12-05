@@ -34,7 +34,7 @@ export default function ReservationForm({ handleAddSubmit }) {
         {/* <button id="myBtn" onClick={handleModal}>New Reservation</button>
 
         {modalViz ? null : ( */}
-        <form onSubmit={handleSubmit}>
+        <form className="reservationForm" onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="name" value={newReservation.name} onChange={handleChange} ></input>
             <input type="text" placeholder="Party" name="party" value={newReservation.party} onChange={handleChange} ></input>
             <input type="text" placeholder="Time" name="time" value={newReservation.time} onChange={handleChange} ></input>
