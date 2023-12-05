@@ -2,6 +2,10 @@
 
 ## Phase 2 Project - David Butterton, Eileen Burdekin
 
+## Example User Flow
+
+![User flow](/userflow.png)
+
 ## Deliverables
 
 ### Core
@@ -14,8 +18,10 @@
 
 ### Stretch
 
-- [ ] PATCH
-- [ ] DELETE
-- [ ] 
+- [ ] PATCH - Update reservation
+- [ ] DELETE - Delete/cancel reservation
+- [ ] Additional API for usernames
+- [ ] Additional API for menu
+- [ ] PATCH - Update menu/specials
 
 
