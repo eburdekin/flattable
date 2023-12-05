@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
-import Header from './Header'
-import NavBar from "./NavBar"
-import ReservationForm from './ReservationForm'
-import Reservation from './Reservation'
+import Header from '../Components/Header'
+import NavBar from "../Components/NavBar"
+import ReservationForm from '../Components/ReservationForm'
+import Reservation from '../Components/Reservation'
 
 const API = 'http://localhost:6001/reservations'
 
-export default function Page() {
+export default function Reservations() {
 
     const [reservations, setReservations] = useState([])
 
@@ -38,10 +38,18 @@ export default function Page() {
 
     return (
         <>
-            <NavBar />
-            <Header />
-            <ReservationForm handleAdd={handleAdd} />
-            <table>
+        <main>
+            <div className='header'>
+             <Header />
+            </div>
+            <br/>
+            <div className="sidebar">
+             <NavBar />
+            </div>
+            <br/>
+            <div className="ReservaionForm" >
+                <ReservationForm handleAdd={handleAdd} />
+             <table className="reservationTable">
                 <thead>
                     <tr>
                         <th>
@@ -60,11 +68,15 @@ export default function Page() {
                             <h2>Edit</h2>
                         </th>
                     </tr>
-                </thead>
-                <tbody>
+                 </thead>
+                 <tbody>
                     {reservations.map(reservation => <Reservation key={reservation.id} reservation={reservation} handleDelete={handleDelete} />)}
-                </tbody>
-            </table>
+                 </tbody>
+                 </table>
+            </div>
+            
+        </main>
+           
         </>
     )
 }

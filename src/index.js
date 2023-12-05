@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css';
-import App from './Components/App';
-import Reservations from './Components/Reservations'
-import Menu from './Components/Menu'
+import App from "./Pages/App"
+import Reservations from './Pages/Reservations'
+import Menu from './Pages/Menu'
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
