@@ -1,6 +1,20 @@
 import '../App.css';
+import { useState } from 'react'
 
 export default function Login() {
+
+    const [user, setUser] = useState('')
+    const [pass, setPass] = useState('')
+    const [login, setLogin] = useState(false)
+
+    function handleLogin() {
+        if (user !== '') {
+        setLogin(!login)
+        }
+        else {
+            alert("Enter a username!")
+        }
+    }
 
     const style = {
         'fontFamily': 'Roboto',
@@ -23,7 +37,7 @@ export default function Login() {
     return <div className="mainComponent">
         <h2>Login</h2>
         <div className='loginContainer'>
-            <h3>Welcome, user!</h3>
+            <h3>Welcome, {login ? user : "user"}!</h3>
 
             <br />
             <div className="inputContainer">
@@ -33,7 +47,8 @@ export default function Login() {
                     className='loginInput'
                     placeholder='Username'
                     style={style}
-                // onChange={pass an event handler here}
+                    value={user}
+                    onChange={(e) => setUser(e.target.value)}
                 />
             </div>
             <div className="inputContainer">
@@ -43,10 +58,12 @@ export default function Login() {
                     className='loginInput'
                     placeholder="Password"
                     style={style}
-                // onChange={pass an event handler here}
+                    value={pass}
+                    onChange={(e) => setPass(e.target.value)}
                 />
             </div>
-            <input type="button" style={buttonStyle} value="Login"></input>
+            <input type="button" style={buttonStyle} value="Login" onClick={handleLogin}></input>
+            {login ? "Login success" : null }
         </div>
 
     </div>
