@@ -10,6 +10,7 @@ const API = 'http://localhost:6001/reservations'
 export default function Reservations() {
 
     const [reservations, setReservations] = useState([])
+    const [editedReservation, setEditedReservation] = useState(null)
 
     const headers = { "Content-Type": "application/json" }
 
@@ -19,14 +20,34 @@ export default function Reservations() {
             .then(setReservations)
     }, [])
 
-    const handleAdd = (newReservation) => {
-        fetch(API, {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify(newReservation)
-        }).then(res => res.json()).then(data => setReservations([...reservations, data]))
-    }
+    const handleAddSubmit = (newReservation) => {
+        if (editedReservation) {
+            // If there is an edited reservation, update it
+            fetch(`${API}/${editedReservation.id}`, {
+                method: "PATCH",
+                headers: headers,
+                body: JSON.stringify(newReservation)
+            }).then(res => res.json())
+            .then(data => {
+                // Update the reservations array with the edited reservation
+                setReservations(reservations.map(reservation =>
+                    reservation.id === editedReservation.id ? data : reservation
+                ));
+                // Reset the edited reservation state
+                setEditedReservation(null);
+            });
+        } else {
+            // If there is no edited reservation, add a new one
+            fetch(API, {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(newReservation)
+            }).then(res => res.json())
+            .then(data => setReservations([...reservations, data]));
+        }
+    };
 
+    
     const handleDelete = (id) => {
         fetch(`${API}/${id}`, {
             method: 'DELETE',
@@ -37,6 +58,11 @@ export default function Reservations() {
             )
     }
 
+    const handleEdit = (reservation) => {
+        setEditedReservation(reservation)
+    }
+
+
     return (
         <>
         <main>
@@ -46,7 +72,7 @@ export default function Reservations() {
             <div className="mainComponent">
             <h2>Reservations</h2>
             <h3>New Reservation</h3>
-                <ReservationForm handleAdd={handleAdd} />
+                <ReservationForm handleAddSubmit={handleAddSubmit} editedReservation={editedReservation} />
             <h3>Existing Reservations</h3>
              <table className="reservationTable">
                 <thead>
@@ -72,7 +98,7 @@ export default function Reservations() {
                     </tr>
                  </thead>
                  <tbody>
-                    {reservations.map(reservation => <Reservation key={reservation.id} reservation={reservation} handleDelete={handleDelete} />)}
+                    {reservations.map(reservation => <Reservation key={reservation.id} reservation={reservation} handleDelete={handleDelete} handleEdit={handleEdit} />)}
                  </tbody>
                  </table>
             </div>
