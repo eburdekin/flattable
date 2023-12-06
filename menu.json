@@ -1,28 +1,19 @@
 {
-    "reservations": [
+    "menu": [
       {
-        "id": 1,
-        "name": "Justin",
-        "party": 2,
-        "time": "07:00",
-        "occasion": "anniversary",
-        "restrictions": "vegan"
+       "Breakfast": ["Moons Over My Hammy"]
       },
       {
-        "name": "Eileen",
-        "party": "5",
-        "time": "17.50",
-        "occasion": "graduation",
-        "restrictions": "gluten-free",
-        "id": 2
+        "Lunch": ["Veggie Burger"]
       },
       {
-        "name": "Woody",
-        "party": "8",
-        "time": "14:20",
-        "occasion": "Toy Story party",
-        "restrictions": "candy",
-        "id": 3
+        "Dinner": ["Oven-Baked Lasagna"]
+      },
+      {
+        "Dessert": ["Apple Pie a la Mode"]
+      },
+      {
+        "Special": ["T-Bone Steak"]
       }
     ]
   }

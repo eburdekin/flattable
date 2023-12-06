@@ -7,7 +7,7 @@ export default function Login() {
         'padding': '2px',
         'margin': '5px',
         'width': '200px',
-        'font-weight': 'bold',
+        'fontWeight': 'bold',
     }
 
     const buttonStyle = {

@@ -94,7 +94,7 @@ export default function ReservationForm({ handleAddSubmit, editedReservation }) 
             <br></br>
             <input 
                 type="submit" 
-                value="Add Reservation"
+                value={editedReservation ? "Update Reservation" :  "Add Reservation"}
                 style={buttonStyle} />
         </form>
     </>
