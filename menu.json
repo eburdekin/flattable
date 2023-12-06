@@ -1,0 +1,19 @@
+{
+    "menu": [
+      {
+       "Breakfast": ["Moons Over My Hammy"]
+      },
+      {
+        "Lunch": ["Veggie Burger"]
+      },
+      {
+        "Dinner": ["Oven-Baked Lasagna"]
+      },
+      {
+        "Dessert": ["Apple Pie a la Mode"]
+      },
+      {
+        "Special": ["T-Bone Steak"]
+      }
+    ]
+  }

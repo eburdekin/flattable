@@ -50,6 +50,8 @@ div {
   border: 5px solid #177359;
   padding: 10px;
   height: 680px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .mainComponent h2 {
@@ -72,9 +74,9 @@ div {
   width: 200px;
 }
 
-.reservationForm {
+.reservationForm, .menuForm {
   margin: auto;
-  width: 60%;
+  width: 50%;
   border: 2px solid #177359;
   padding: 10px;
   border-radius: 5px;
@@ -93,4 +95,23 @@ div {
 .reservationTable td {
   height: 30px;
 }
+
+.menu {
+  margin: auto;
+  width: 75%;
+  border: 2px solid #177359;
+  padding: 5px;
+  border-radius: 5px;
+  list-style-position: inside;
+  background-color: #52e8cc;
+}
+
+.menu h4 {
+  text-align: center;
+}
+
+.menu li {
+  margin-left: 125px;
+}
+
 
