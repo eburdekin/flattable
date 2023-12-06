@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 export default function ReservationForm({ handleAddSubmit }) {
 
-    // const [modalViz, setModalViz] = useState(false)
-
     const [newReservation, setNewReservation] = useState({
         name: '',
         party: '',
@@ -16,31 +14,77 @@ export default function ReservationForm({ handleAddSubmit }) {
         const name = e.target.name;
         let value = e.target.value
         setNewReservation({ ...newReservation, [name]: value })
-
     }
-
 
     const handleSubmit = (e) => {
         e.preventDefault()
         handleAddSubmit(newReservation)
     }
 
-    // const handleModal = () => {
-    //     console.log(modalViz)
-    //     setModalViz(!modalViz)
-    // }
+    const style = {
+        'fontFamily': 'Roboto',
+        'padding': '2px',
+        'margin': '5px',
+        'width': '200px',
+        'fontWeight': 'bold',
+    }
+
+    const buttonStyle = {
+        'fontFamily': 'Roboto',
+        'padding': '8px',
+        'margin': '5px',
+        'backgroundColor': '#BF41B7',
+        'color': 'white',
+        'fontSize': '14px',
+        'fontWeight': 'bold',
+    }
 
     return <>
-        {/* <button id="myBtn" onClick={handleModal}>New Reservation</button>
-
-        {modalViz ? null : ( */}
         <form className="reservationForm" onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="name" value={newReservation.name} onChange={handleChange} ></input>
-            <input type="text" placeholder="Party" name="party" value={newReservation.party} onChange={handleChange} ></input>
-            <input type="text" placeholder="Time" name="time" value={newReservation.time} onChange={handleChange} ></input>
-            <input type="text" placeholder="Occasion" name="occasion" value={newReservation.occasion} onChange={handleChange} ></input>
-            <input type="text" placeholder="Restrictions" name="restrictions" value={newReservation.restrictions} onChange={handleChange} ></input>
-            <input type="submit" value="Add Reservation" />
+            <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={newReservation.name}
+                onChange={handleChange}
+                style={style}
+                 ></input>
+            <input
+                type="text"
+                placeholder="Party"
+                name="party" 
+                value={newReservation.party} 
+                onChange={handleChange} 
+                style={style}
+                ></input>
+            <input
+                type="text"
+                placeholder="Time" 
+                name="time" 
+                value={newReservation.time} 
+                onChange={handleChange} 
+                style={style}
+                ></input>
+            <input 
+                type="text"
+                placeholder="Occasion"
+                name="occasion"
+                value={newReservation.occasion}
+                onChange={handleChange}
+                style={style}
+                ></input>
+            <input
+                type="text"
+                placeholder="Restrictions" 
+                name="restrictions" 
+                value={newReservation.restrictions} 
+                onChange={handleChange} 
+                style={style} ></input>
+            <br></br>
+            <input 
+                type="submit" 
+                value="Add Reservation"
+                style={buttonStyle} />
         </form>
     </>
 }

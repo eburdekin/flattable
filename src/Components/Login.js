@@ -1,21 +1,38 @@
-
+import '../App.css';
 
 export default function Login() {
-    return <>
-    
-       <div className='loginContainer'>
-            <div className="inputheader">
-                <header>Welcome User</header>
-                <div>Login</div>
-            </div>
-          
-         <br />
+
+    const style = {
+        'fontFamily': 'Roboto',
+        'padding': '2px',
+        'margin': '5px',
+        'width': '200px',
+        'font-weight': 'bold',
+    }
+
+    const buttonStyle = {
+        'fontFamily': 'Roboto',
+        'padding': '8px',
+        'margin': '5px',
+        'backgroundColor': '#BF41B7',
+        'color': 'white',
+        'fontSize': '14px',
+        'fontWeight': 'bold',
+    }
+
+    return <div className="mainComponent">
+        <h2>Login</h2>
+        <div className='loginContainer'>
+            <h3>Welcome, user!</h3>
+
+            <br />
             <div className="inputContainer">
                 <label>Username</label>
-                <input 
-                type='text'
-                className='loginInput'
-                placeholder='Username'
+                <input
+                    type='text'
+                    className='loginInput'
+                    placeholder='Username'
+                    style={style}
                 // onChange={pass an event handler here}
                 />
             </div>
@@ -25,10 +42,12 @@ export default function Login() {
                     type='text'
                     className='loginInput'
                     placeholder="Password"
-                    // onChange={pass an event handler here}
+                    style={style}
+                // onChange={pass an event handler here}
                 />
             </div>
-       </div>
-    
-    </>
+            <input type="button" style={buttonStyle} value="Login"></input>
+        </div>
+
+    </div>
 }

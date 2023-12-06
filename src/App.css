@@ -1,16 +1,16 @@
 body {
-  background: rgb(192, 7, 7);
+  background: #30D9BA;
   font-family: 'Roboto';
 }
 
-
-h1 {
-  text-align: center;
+div {
+  background-color: #30D9BA;
+  border-radius: 25px;
 }
 
 .sidebar {
   height: 100%;
-  width: 200px;
+  width: 20%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -20,61 +20,77 @@ h1 {
   left: 0;
   top: 0;
   padding-top: 40px;
-  background-color: rgb(9, 0, 0);
+  /* background-color: #177359; */
+  color: #BF41B7;
+  border-radius: 25px;
+  border: 5px solid #177359;
 }
 
 .header {
-  margin: auto;
-  width: 100%;
-  border: 5px solid rgb(0, 128, 122);
+  text-align: center;
+  font-family: 'Righteous';
+  display: flex;
+  flex-direction: column;
+  margin-left: 22%;
+  width: 75%;
+  height: 150px;
+  border: 5px solid #177359;
   padding: 10px;
-  background-color: rgb(192, 7, 7);
+  color: #400235;
+  font-size: 30px;
+  border-radius: 25px;
 }
 
-.loginComponent {
+.mainComponent {
   display: flex;
-  flex-direction:column;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
-  width: auto;
-  border: 5px solid rgb(0, 128, 122);
+  margin-left: 22%;
+  width: 75%;
+  border: 5px solid #177359;
   padding: 10px;
-  height: 400px;
-  background: rgb(192, 7, 7);
+  height: 680px;
+}
+
+.mainComponent h2 {
+  font-family: 'Righteous';
+  font-size: 34px;
+  color: #400235;
 }
 
 .loginContainer {
   display: flex;
   flex-direction:column;
-  justify-content: center;
   align-items: center;
   height: 100px;
   width: 300px;
-  background-color: rgb(192, 7, 7);
 }
 
 .inputContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content:right;
+  justify-content: right;
   height: 200px;
   width: 200px;
 }
 
 .reservationForm {
   margin: auto;
-  width: 50%;
-  border: 3px solid rgb(0, 128, 122);
+  width: 60%;
+  border: 2px solid #177359;
   padding: 10px;
+  border-radius: 5px;
+  text-align: center;
 }
-
 
 .reservationTable {
   margin: auto;
-  width: 50%;
-  border: 3px solid rgb(0, 128, 122);
-  padding: 10px;
+  width: 75%;
+  border: 2px solid #177359;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
 
+.reservationTable td {
+  height: 30px;
+}
 
