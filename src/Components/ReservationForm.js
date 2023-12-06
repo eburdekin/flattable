@@ -25,24 +25,66 @@ export default function ReservationForm({ handleAddSubmit }) {
         'fontFamily': 'Roboto',
         'padding': '2px',
         'margin': '5px',
-        'width': '200px'
+        'width': '200px',
+        'fontWeight': 'bold',
     }
 
     const buttonStyle = {
         'fontFamily': 'Roboto',
-        'padding': '5px',
+        'padding': '8px',
         'margin': '5px',
+        'backgroundColor': '#BF41B7',
+        'color': 'white',
+        'fontSize': '14px',
+        'fontWeight': 'bold',
     }
 
     return <>
         <form className="reservationForm" onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="name" value={newReservation.name} onChange={handleChange} style={style} ></input>
-            <input type="text" placeholder="Party" name="party" value={newReservation.party} onChange={handleChange} style={style}></input>
-            <input type="text" placeholder="Time" name="time" value={newReservation.time} onChange={handleChange} style={style}></input>
-            <input type="text" placeholder="Occasion" name="occasion" value={newReservation.occasion} onChange={handleChange} style={style} ></input>
-            <input type="text" placeholder="Restrictions" name="restrictions" value={newReservation.restrictions} onChange={handleChange}  style={style} ></input>
+            <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={newReservation.name}
+                onChange={handleChange}
+                style={style}
+                 ></input>
+            <input
+                type="text"
+                placeholder="Party"
+                name="party" 
+                value={newReservation.party} 
+                onChange={handleChange} 
+                style={style}
+                ></input>
+            <input
+                type="text"
+                placeholder="Time" 
+                name="time" 
+                value={newReservation.time} 
+                onChange={handleChange} 
+                style={style}
+                ></input>
+            <input 
+                type="text"
+                placeholder="Occasion"
+                name="occasion"
+                value={newReservation.occasion}
+                onChange={handleChange}
+                style={style}
+                ></input>
+            <input
+                type="text"
+                placeholder="Restrictions" 
+                name="restrictions" 
+                value={newReservation.restrictions} 
+                onChange={handleChange} 
+                style={style} ></input>
             <br></br>
-            <input type="submit" value="Add Reservation" style={buttonStyle} />
+            <input 
+                type="submit" 
+                value="Add Reservation"
+                style={buttonStyle} />
         </form>
     </>
 }

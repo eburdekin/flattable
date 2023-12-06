@@ -61,16 +61,13 @@ div {
 .loginContainer {
   display: flex;
   flex-direction:column;
-  justify-content: center;
   align-items: center;
   height: 100px;
   width: 300px;
 }
 
 .inputContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content:right;
+  justify-content: right;
   height: 200px;
   width: 200px;
 }
@@ -86,10 +83,14 @@ div {
 
 .reservationTable {
   margin: auto;
-  width: 60%;
+  width: 75%;
   border: 2px solid #177359;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
+  text-align: center;
 }
 
+.reservationTable td {
+  height: 30px;
+}
 
