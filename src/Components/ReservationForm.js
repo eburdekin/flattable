@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-export default function ReservationForm({ handleAddSubmit }) {
+export default function ReservationForm({ handleAddSubmit, editedReservation }) {
 
     const [newReservation, setNewReservation] = useState({
         name: '',
@@ -17,9 +17,20 @@ export default function ReservationForm({ handleAddSubmit }) {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         handleAddSubmit(newReservation)
     }
+
+    useEffect(() => {
+        //Update the form fields when the editedReservation prop changes
+        setNewReservation(editedReservation ?? {
+            name: '',
+            party: '',
+            time: '',
+            occasion: '',
+            restrictions: '',
+        });
+    }, [editedReservation])
 
     const style = {
         'fontFamily': 'Roboto',
