@@ -6,6 +6,7 @@ import App from "./Pages/App"
 import Reservations from './Pages/Reservations'
 import Menu from './Pages/Menu'
 import reportWebVitals from './reportWebVitals';
+import './App.css'
 
 const router = createBrowserRouter([
   {

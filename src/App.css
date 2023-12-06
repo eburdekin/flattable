@@ -3,17 +3,14 @@ body {
   font-family: 'Roboto';
 }
 
-h1 {
-  text-align: center;
-}
-
 div {
   background-color: #30D9BA;
+  border-radius: 25px;
 }
 
 .sidebar {
   height: 100%;
-  width: 200px;
+  width: 20%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -25,13 +22,19 @@ div {
   padding-top: 40px;
   background-color: #400235;
   color: #BF41B7;
+  border-radius: 25px;
 }
 
 .header {
+  text-align: center;
+  font-family: 'Righteous';
   margin: auto;
   width: 100%;
-  border: 5px solid rgb(0, 128, 122);
+  border: 5px solid #177359;
   padding: 10px;
+  color: #177359;
+  font-size: 30px;
+  border-radius: 25px;
 }
 
 .loginComponent {
@@ -41,7 +44,7 @@ div {
   align-items: center;
   margin: auto;
   width: auto;
-  border: 5px solid rgb(0, 128, 122);
+  border: 5px solid #177359;
   padding: 10px;
   height: 400px;
 }
@@ -66,15 +69,14 @@ div {
 .reservationForm {
   margin: auto;
   width: 50%;
-  border: 3px solid rgb(0, 128, 122);
+  border: 3px solid #177359;
   padding: 10px;
 }
-
 
 .reservationTable {
   margin: auto;
   width: 50%;
-  border: 3px solid rgb(0, 128, 122);
+  border: 3px solid #177359;
   padding: 10px;
 }
 

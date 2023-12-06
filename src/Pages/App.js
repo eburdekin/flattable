@@ -10,13 +10,11 @@ function App() {
         <Header />
       </div>
       <br/>
+      <NavBar />
       <div className="loginComponent">
         <Login />
       </div>
       <br />
-    <div className="sidebar"> 
-      <NavBar />
-    </div>
     </main>
     
   );

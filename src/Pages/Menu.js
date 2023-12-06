@@ -8,9 +8,7 @@ export default function Menu() {
                 <Header />
             </div>
             <br/>
-            <div className='sidebar'>
                  <NavBar />
-            </div>
         </main>
        
        

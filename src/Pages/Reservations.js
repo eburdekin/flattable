@@ -43,11 +43,9 @@ export default function Reservations() {
              <Header />
             </div>
             <br/>
-            <div className="sidebar">
              <NavBar />
-            </div>
             <br/>
-            <div className="ReservaionForm" >
+            <div className="reservationForm" >
                 <ReservationForm handleAdd={handleAdd} />
              <table className="reservationTable">
                 <thead>
