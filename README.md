@@ -12,15 +12,14 @@
 
 - [x] Single-page application (only one index.html file) using create-react-app
 - [x] At least 5 components
-- [ ] At least 3 client-side routes & include navbar
-- [ ] API for backend, using GET/POST
-- [ ] Some styling
+- [x] At least 3 client-side routes & include navbar
+- [x] API for backend, using GET/POST
+- [x] Some styling
 
 ### Stretch
 
-- [ ] PATCH - Update reservation
-- [ ] DELETE - Delete/cancel reservation
-- [ ] Additional API for usernames
+- [x] PATCH - Update reservation
+- [x] DELETE - Delete/cancel reservation
 - [ ] Additional API for menu
 - [ ] PATCH - Update menu/specials
 
