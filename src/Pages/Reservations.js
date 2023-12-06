@@ -21,16 +21,33 @@ export default function Reservations() {
     }, [])
 
     const handleAddSubmit = (newReservation) => {
-        // if(editedReservation) {
-        //     //if there is an edited reservation update
-        // }
-        fetch(API, {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify(newReservation)
-        }).then(res => res.json()).then(data => setReservations([...reservations, data]))
-    }
+        if (editedReservation) {
+            // If there is an edited reservation, update it
+            fetch(`${API}/${editedReservation.id}`, {
+                method: "PATCH",
+                headers: headers,
+                body: JSON.stringify(newReservation)
+            }).then(res => res.json())
+            .then(data => {
+                // Update the reservations array with the edited reservation
+                setReservations(reservations.map(reservation =>
+                    reservation.id === editedReservation.id ? data : reservation
+                ));
+                // Reset the edited reservation state
+                setEditedReservation(null);
+            });
+        } else {
+            // If there is no edited reservation, add a new one
+            fetch(API, {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(newReservation)
+            }).then(res => res.json())
+            .then(data => setReservations([...reservations, data]));
+        }
+    };
 
+    
     const handleDelete = (id) => {
         fetch(`${API}/${id}`, {
             method: 'DELETE',

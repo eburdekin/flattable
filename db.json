@@ -2,7 +2,7 @@
   "reservations": [
     {
       "id": 1,
-      "name": "David",
+      "name": "Justin",
       "party": 2,
       "time": "07:00",
       "occasion": "anniversary",
@@ -15,6 +15,14 @@
       "occasion": "graduation",
       "restrictions": "gluten-free",
       "id": 2
+    },
+    {
+      "name": "Woody",
+      "party": "8",
+      "time": "14:20",
+      "occasion": "Toy Story party",
+      "restrictions": "candy",
+      "id": 3
     }
   ]
 }
