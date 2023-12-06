@@ -1,11 +1,14 @@
 body {
-  background: rgb(192, 7, 7);
+  background: #30D9BA;
   font-family: 'Roboto';
 }
 
-
 h1 {
   text-align: center;
+}
+
+div {
+  background-color: #30D9BA;
 }
 
 .sidebar {
@@ -20,7 +23,8 @@ h1 {
   left: 0;
   top: 0;
   padding-top: 40px;
-  background-color: rgb(9, 0, 0);
+  background-color: #400235;
+  color: #BF41B7;
 }
 
 .header {
@@ -28,7 +32,6 @@ h1 {
   width: 100%;
   border: 5px solid rgb(0, 128, 122);
   padding: 10px;
-  background-color: rgb(192, 7, 7);
 }
 
 .loginComponent {
@@ -41,7 +44,6 @@ h1 {
   border: 5px solid rgb(0, 128, 122);
   padding: 10px;
   height: 400px;
-  background: rgb(192, 7, 7);
 }
 
 .loginContainer {
@@ -51,7 +53,6 @@ h1 {
   align-items: center;
   height: 100px;
   width: 300px;
-  background-color: rgb(192, 7, 7);
 }
 
 .inputContainer {

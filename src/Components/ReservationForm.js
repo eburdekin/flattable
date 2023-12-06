@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 export default function ReservationForm({ handleAddSubmit }) {
 
-    // const [modalViz, setModalViz] = useState(false)
-
     const [newReservation, setNewReservation] = useState({
         name: '',
         party: '',
@@ -19,21 +17,12 @@ export default function ReservationForm({ handleAddSubmit }) {
 
     }
 
-
     const handleSubmit = (e) => {
         e.preventDefault()
         handleAddSubmit(newReservation)
     }
 
-    // const handleModal = () => {
-    //     console.log(modalViz)
-    //     setModalViz(!modalViz)
-    // }
-
     return <>
-        {/* <button id="myBtn" onClick={handleModal}>New Reservation</button>
-
-        {modalViz ? null : ( */}
         <form className="reservationForm" onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="name" value={newReservation.name} onChange={handleChange} ></input>
             <input type="text" placeholder="Party" name="party" value={newReservation.party} onChange={handleChange} ></input>
