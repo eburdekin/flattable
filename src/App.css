@@ -71,15 +71,17 @@ div {
 .reservationForm {
   margin: auto;
   width: 50%;
-  border: 3px solid #177359;
+  border: 2px solid #177359;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .reservationTable {
   margin: auto;
   width: 50%;
-  border: 3px solid #177359;
+  border: 2px solid #177359;
   padding: 10px;
+  border-radius: 5px;
 }
 
 

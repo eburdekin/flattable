@@ -8,8 +8,8 @@ export default function Menu() {
             <br/>
                  <NavBar />
         </main>
-       
-       
-        This is a menu!
+       <div className="mainComponent">
+        Menu info here
+       </div>
     </>
 }
