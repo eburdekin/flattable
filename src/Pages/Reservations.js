@@ -1,3 +1,4 @@
+import '../App.css';
 import { useState, useEffect } from 'react'
 import Header from '../Components/Header'
 import NavBar from "../Components/NavBar"
@@ -42,26 +43,28 @@ export default function Reservations() {
              <Header />
             <br/>
              <NavBar />
-            <br/>
             <div className="mainComponent">
+            <h2>Reservations</h2>
+            <h3>New Reservation</h3>
                 <ReservationForm handleAdd={handleAdd} />
+            <h3>Existing Reservations</h3>
              <table className="reservationTable">
                 <thead>
                     <tr>
                         <th>
-                            <h2>Name</h2>
+                            <h4>Name</h4>
                         </th>
                         <th>
-                            <h2>Party</h2>
+                            <h4>Party</h4>
                         </th>
                         <th>
-                            <h2>Time</h2>
+                            <h4>Time</h4>
                         </th>
                         <th>
-                            <h2>Occasion</h2>
+                            <h4>Occasion</h4>
                         </th>
                         <th>
-                            <h2>Edit</h2>
+                            <h4>Edit</h4>
                         </th>
                     </tr>
                  </thead>

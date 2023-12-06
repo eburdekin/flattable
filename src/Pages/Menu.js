@@ -1,3 +1,4 @@
+import '../App.css';
 import Header from '../Components/Header'
 import NavBar from "../Components/NavBar"
 
@@ -9,7 +10,7 @@ export default function Menu() {
                  <NavBar />
         </main>
        <div className="mainComponent">
-        Menu info here
+        <h2>Menu</h2>
        </div>
     </>
 }

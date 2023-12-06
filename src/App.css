@@ -48,7 +48,12 @@ div {
   width: 75%;
   border: 5px solid #177359;
   padding: 10px;
-  height: 400px;
+  height: 600px;
+}
+
+.mainComponent h2 {
+  font-family: 'Righteous';
+  font-size: 34px;
 }
 
 .loginContainer {
