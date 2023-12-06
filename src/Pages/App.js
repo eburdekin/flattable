@@ -6,9 +6,7 @@ import Login from "../Components/Login"
 function App() {
   return (
     <main>
-      <div className="header">
         <Header />
-      </div>
       <br/>
       <NavBar />
       <div className="loginComponent">

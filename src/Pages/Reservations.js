@@ -39,9 +39,7 @@ export default function Reservations() {
     return (
         <>
         <main>
-            <div className='header'>
              <Header />
-            </div>
             <br/>
              <NavBar />
             <br/>
