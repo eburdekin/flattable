@@ -1,7 +1,7 @@
-
+import '../App.css';
 
 export default function Login() {
-    return <>
+    return <div className="mainComponent">
     
        <div className='loginContainer'>
             <div className="inputheader">
@@ -30,5 +30,5 @@ export default function Login() {
             </div>
        </div>
     
-    </>
+    </div>
 }

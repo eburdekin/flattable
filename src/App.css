@@ -20,7 +20,7 @@ div {
   left: 0;
   top: 0;
   padding-top: 40px;
-  background-color: #400235;
+  background-color: #177359;
   color: #BF41B7;
   border-radius: 25px;
 }
@@ -28,8 +28,10 @@ div {
 .header {
   text-align: center;
   font-family: 'Righteous';
-  margin: auto;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22%;
+  width: 75%;
   border: 5px solid #177359;
   padding: 10px;
   color: #177359;
@@ -37,13 +39,13 @@ div {
   border-radius: 25px;
 }
 
-.loginComponent {
+.mainComponent {
   display: flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  width: auto;
+  margin-left: 22%;
+  width: 75%;
   border: 5px solid #177359;
   padding: 10px;
   height: 400px;

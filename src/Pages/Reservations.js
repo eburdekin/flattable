@@ -43,7 +43,7 @@ export default function Reservations() {
             <br/>
              <NavBar />
             <br/>
-            <div className="reservationForm" >
+            <div className="mainComponent">
                 <ReservationForm handleAdd={handleAdd} />
              <table className="reservationTable">
                 <thead>
@@ -70,7 +70,7 @@ export default function Reservations() {
                  </tbody>
                  </table>
             </div>
-            
+  
         </main>
            
         </>

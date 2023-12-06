@@ -6,15 +6,13 @@ import Login from "../Components/Login"
 function App() {
   return (
     <main>
-        <Header />
-      <br/>
+      <Header />
+      <br />
       <NavBar />
-      <div className="loginComponent">
-        <Login />
-      </div>
+      <Login />
       <br />
     </main>
-    
+
   );
 }
 
