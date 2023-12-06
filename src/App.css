@@ -20,9 +20,10 @@ div {
   left: 0;
   top: 0;
   padding-top: 40px;
-  background-color: #177359;
+  /* background-color: #177359; */
   color: #BF41B7;
   border-radius: 25px;
+  border: 5px solid #177359;
 }
 
 .header {
@@ -32,28 +33,29 @@ div {
   flex-direction: column;
   margin-left: 22%;
   width: 75%;
+  height: 150px;
   border: 5px solid #177359;
   padding: 10px;
-  color: #177359;
+  color: #400235;
   font-size: 30px;
   border-radius: 25px;
 }
 
 .mainComponent {
   display: flex;
-  flex-direction:column;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin-left: 22%;
   width: 75%;
   border: 5px solid #177359;
   padding: 10px;
-  height: 600px;
+  height: 680px;
 }
 
 .mainComponent h2 {
   font-family: 'Righteous';
   font-size: 34px;
+  color: #400235;
 }
 
 .loginContainer {
@@ -75,15 +77,16 @@ div {
 
 .reservationForm {
   margin: auto;
-  width: 50%;
+  width: 60%;
   border: 2px solid #177359;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .reservationTable {
   margin: auto;
-  width: 50%;
+  width: 60%;
   border: 2px solid #177359;
   padding: 10px;
   border-radius: 5px;

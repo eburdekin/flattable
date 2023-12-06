@@ -11,6 +11,10 @@ export default function Menu() {
         </main>
        <div className="mainComponent">
         <h2>Menu</h2>
+        <h3>Breakfast</h3>
+        <h3>Lunch</h3>
+        <h3>Dinner</h3>
+        <h3>Specials</h3>
        </div>
     </>
 }

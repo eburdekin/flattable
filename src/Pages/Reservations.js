@@ -64,6 +64,9 @@ export default function Reservations() {
                             <h4>Occasion</h4>
                         </th>
                         <th>
+                            <h4>Restrictions</h4>
+                        </th>
+                        <th>
                             <h4>Edit</h4>
                         </th>
                     </tr>

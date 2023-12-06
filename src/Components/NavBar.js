@@ -4,7 +4,7 @@ import '../App.css';
 export default function NavBar() {
 
     const style = {
-        'color': 'black',
+        'color': '#400235',
         'fontFamily': 'Righteous',
         'fontSize': '24px',
         'padding': '10px',

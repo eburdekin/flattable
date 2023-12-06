@@ -2,11 +2,10 @@ import '../App.css';
 
 export default function Login() {
     return <div className="mainComponent">
-    
+        <h2>Login</h2>
        <div className='loginContainer'>
             <div className="inputheader">
                 <header>Welcome User</header>
-                <div>Login</div>
             </div>
           
          <br />
