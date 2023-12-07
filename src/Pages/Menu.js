@@ -16,7 +16,16 @@ export default function Menu() {
             .then(setMenu)
     }, [])
 
-
+    function updateMenu(newMenu) {
+        fetch(API, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newMenu)
+        })
+        setMenu(newMenu)
+    }
 
     return <>
         <main>
@@ -27,7 +36,7 @@ export default function Menu() {
         <div className="mainComponent">
             <h2>Menu</h2>
             <h3>Update Menu</h3>
-            <MenuForm />
+            <MenuForm menu={menu} updateMenu={updateMenu} />
             <h3>Today's Courses</h3>
             <div className="menu">
                 {Object.entries(menu).map(([course, mealName]) => <><h4>{course}</h4><p>{mealName}</p></>)}

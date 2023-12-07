@@ -1,30 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 
-export default function MenuForm({menu}) {
+export default function MenuForm({menu, updateMenu}) {
 
-    const [newMenu, setNewMenu] = useState({menu})
+    const [newMenu, setNewMenu] = useState(menu)
 
-    // const handleChange = (e) => {
-    //     const name = e.target.name;
-    //     let value = e.target.value
-    //     setNewReservation({ ...newReservation, [name]: value })
-    // }
+    const handleChange = (e) => {
+        const name = e.target.name;
+        let value = e.target.value
+        setNewMenu({ ...newMenu, [name]: value })
+    }
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     handleAddSubmit(newReservation)
-    // }
-
-    // useEffect(() => {
-    //     //Update the form fields when the editedReservation prop changes
-    //     setNewReservation(editedReservation ?? {
-    //         name: '',
-    //         party: '',
-    //         time: '',
-    //         occasion: '',
-    //         restrictions: '',
-    //     });
-    // }, [editedReservation])
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        updateMenu(newMenu)
+    }
 
     const style = {
         'fontFamily': 'Roboto',
@@ -45,51 +34,52 @@ export default function MenuForm({menu}) {
     }
 
     return <>
-        <form className="menuForm">
+        <form className="menuForm" onSubmit={handleSubmit}>
             <input
                 type="text"
                 placeholder="Breakfast"
-                name="name"
-                value={newMenu.breakfast}
-                // onChange={handleChange}
+                name="Breakfast"
+                value={newMenu.Breakfast}
+                onChange={handleChange}
                 style={style}
                  ></input>
             <input
                 type="text"
                 placeholder="Lunch"
-                name="party" 
-                // value={newReservation.party} 
-                // onChange={handleChange} 
+                name="Lunch" 
+                value={newMenu.Lunch}
+                onChange={handleChange} 
                 style={style}
                 ></input>
             <input
                 type="text"
                 placeholder="Dinner" 
-                name="time" 
-                // value={newReservation.time} 
-                // onChange={handleChange} 
+                name="Dinner" 
+                value={newMenu.Dinner}
+                onChange={handleChange} 
                 style={style}
                 ></input>
             <input 
                 type="text"
                 placeholder="Dessert"
-                name="occasion"
-                // value={newReservation.occasion}
-                // onChange={handleChange}
+                name="Dessert"
+                value={newMenu.Dessert}
+                onChange={handleChange}
                 style={style}
                 ></input>
             <input
                 type="text"
                 placeholder="Special" 
-                name="restrictions" 
-                // value={newReservation.restrictions} 
-                // onChange={handleChange} 
+                name="Special" 
+                value={newMenu.Special}
+                onChange={handleChange} 
                 style={style} ></input>
             <br></br>
             <input 
                 type="submit" 
                 value="Update Menu"
-                style={buttonStyle} />
+                style={buttonStyle}
+                 />
         </form>
     </>
 }
