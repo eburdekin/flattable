@@ -1,12 +1,12 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
-export default function MenuForm({menu, updateMenu}) {
+export default function MenuForm({ menu, updateMenu }) {
 
     const [newMenu, setNewMenu] = useState({})
 
     useEffect(() => {
         setNewMenu(menu);
-      }, [menu]);
+    }, [menu]);
 
     const handleChange = (e) => {
         const name = e.target.name;
@@ -39,6 +39,7 @@ export default function MenuForm({menu, updateMenu}) {
 
     return <>
         <form className="menuForm" onSubmit={handleSubmit}>
+            <label>Breakfast</label><br></br>
             <input
                 type="text"
                 placeholder="Breakfast"
@@ -46,44 +47,48 @@ export default function MenuForm({menu, updateMenu}) {
                 value={newMenu.Breakfast}
                 onChange={handleChange}
                 style={style}
-                 ></input>
+            ></input><br></br>
+            <label>Lunch</label><br></br>
             <input
                 type="text"
                 placeholder="Lunch"
-                name="Lunch" 
+                name="Lunch"
                 value={newMenu.Lunch}
-                onChange={handleChange} 
+                onChange={handleChange}
                 style={style}
-                ></input>
+            ></input><br></br>
+            <label>Dinner</label><br></br>
             <input
                 type="text"
-                placeholder="Dinner" 
-                name="Dinner" 
+                placeholder="Dinner"
+                name="Dinner"
                 value={newMenu.Dinner}
-                onChange={handleChange} 
+                onChange={handleChange}
                 style={style}
-                ></input>
-            <input 
+            ></input><br></br>
+            <label>Dessert</label><br></br>
+            <input
                 type="text"
                 placeholder="Dessert"
                 name="Dessert"
                 value={newMenu.Dessert}
                 onChange={handleChange}
                 style={style}
-                ></input>
+            ></input><br></br>
+            <label>Special</label><br></br>
             <input
                 type="text"
-                placeholder="Special" 
-                name="Special" 
+                placeholder="Special"
+                name="Special"
                 value={newMenu.Special}
-                onChange={handleChange} 
+                onChange={handleChange}
                 style={style} ></input>
             <br></br>
-            <input 
-                type="submit" 
+            <input
+                type="submit"
                 value="Update Menu"
                 style={buttonStyle}
-                 />
-        </form>
+            />
+        </form >
     </>
 }
