@@ -1,8 +1,12 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 
 export default function MenuForm({menu, updateMenu}) {
 
-    const [newMenu, setNewMenu] = useState(menu)
+    const [newMenu, setNewMenu] = useState({})
+
+    useEffect(() => {
+        setNewMenu(menu);
+      }, [menu]);
 
     const handleChange = (e) => {
         const name = e.target.name;
