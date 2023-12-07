@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-export default function ReservationForm() {
+export default function MenuForm({menu}) {
 
-    const [newReservation, setNewReservation] = useState({
-        Breakfast: '',
-        Lunch: '',
-        Dinner: '',
-        Dessert: '',
-        Special: '',
-    })
+    const [newMenu, setNewMenu] = useState({menu})
 
     // const handleChange = (e) => {
     //     const name = e.target.name;
@@ -56,7 +50,7 @@ export default function ReservationForm() {
                 type="text"
                 placeholder="Breakfast"
                 name="name"
-                // value={newReservation.name}
+                value={newMenu.breakfast}
                 // onChange={handleChange}
                 style={style}
                  ></input>
