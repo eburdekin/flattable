@@ -28,7 +28,6 @@ label {
   left: 10px;
   top: 10px;
   padding-top: 25px;
-  /* background-color: #177359; */
   border-radius: 25px;
   border: 5px solid #177359;
 }
@@ -103,7 +102,6 @@ h1 {
 
 .reservationTable {
   margin: auto;
-  width: 75%;
   border: 2px solid #177359;
   padding: 5px;
   border-radius: 5px;
@@ -112,6 +110,7 @@ h1 {
 
 .reservationTable td {
   height: 30px;
+  width: 100px;
 }
 
 .menu {
@@ -132,6 +131,32 @@ h1 {
   color: #BF41B7;
 }
 
+.table-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 85%;
+}
+
 .seated-table {
-  background: white;
+  width: 150px;
+  height: 150px;
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+.seated-table p {
+  font-family: Righteous;
+  color: #400235;
+  font-size: 18px;
+  height: 30px;
+}
+
+.seated-table span {
+  font-family: Roboto;
+}
+
+.smaller {
+  font-size: 12px;
+  font-weight: bold;
 }

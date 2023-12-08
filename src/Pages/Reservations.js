@@ -72,7 +72,6 @@ export default function Reservations() {
     }
 
     const seatTable = (res) => {
-        // console.log({...res, seated: !res.seated})
         fetch(`${API}/${res.id}`, {
             method: "PATCH",
             headers: headers,
@@ -136,7 +135,7 @@ export default function Reservations() {
                         </tbody>
                     </table>
                                 <br></br>
-                    <Tables tables={reservations.filter(res => res.seated)} />
+                    <Tables tables={reservations.filter(res => res.seated)} seatTable={seatTable} />
 
                 </div>
 

@@ -24,7 +24,8 @@
       "time": "17:30",
       "occasion": "women's group",
       "restrictions": "dairy free",
-      "id": 3
+      "id": 3,
+      "seated": true
     },
     {
       "name": "Dawn",
@@ -32,7 +33,8 @@
       "time": "18:15",
       "occasion": "date",
       "restrictions": "none",
-      "id": 4
+      "id": 4,
+      "seated": true
     },
     {
       "name": "David Butterton",
@@ -40,7 +42,8 @@
       "time": "17:30",
       "occasion": "ayurveda ",
       "restrictions": "gluten-free",
-      "id": 5
+      "id": 5,
+      "seated": true
     },
     {
       "name": "Emma",
@@ -48,7 +51,8 @@
       "time": "4:00",
       "occasion": "Birthday",
       "restrictions": "None",
-      "id": 6
+      "id": 6,
+      "seated": true
     }
   ]
 }
