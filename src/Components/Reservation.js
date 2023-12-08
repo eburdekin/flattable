@@ -1,9 +1,5 @@
 export default function Reservation({reservation, handleDelete, handleEdit}) {
 
-    // const handleRowClick = () => {
-    //     handleEdit(reservation)
-    // }
-
     return <>
     <tr>
         <td><img src="../images/table.png" width="20px" alt="table" /></td>
