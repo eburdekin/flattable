@@ -3,26 +3,50 @@
     {
       "id": 1,
       "name": "Justin",
-      "party": 2,
+      "party": "3",
       "time": "07:00",
       "occasion": "anniversary",
-      "restrictions": "vegan"
+      "restrictions": "vegan",
+      "seated": "false",
+      "table_image": "fflattable/public/images/table.png"
     },
     {
       "name": "Eileen",
-      "party": "5",
+      "party": "6",
       "time": "17.50",
       "occasion": "graduation",
       "restrictions": "gluten-free",
-      "id": 2
+      "id": 2,
+      "seated": "false",
+      "table_image": "flattable/public/images/table.png"
     },
     {
       "name": "Woody",
       "party": "8",
-      "time": "14:20",
-      "occasion": "Toy Story party",
-      "restrictions": "candy",
-      "id": 3
+      "time": "17:30",
+      "occasion": "women's group",
+      "restrictions": "dairy free",
+      "id": 3,
+      "seated": "false",
+      "table_image": "../public/images/table.png"
+    },
+    {
+      "name": "Dawn",
+      "party": "3",
+      "time": "18:15",
+      "occasion": "date",
+      "restrictions": "none",
+      "id": 4,
+      "seated": "false",
+      "table_image": ""
+    },
+    {
+      "name": "David Butterton",
+      "party": "4",
+      "time": "17:30",
+      "occasion": "ayurveda ",
+      "restrictions": "gluten-free",
+      "id": 5
     }
   ]
 }
