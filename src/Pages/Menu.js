@@ -27,6 +27,10 @@ export default function Menu() {
         setMenu(newMenu)
     }
 
+    const current = new Date();
+    const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+
+
     return <>
         <main>
             <Header />
@@ -34,8 +38,8 @@ export default function Menu() {
             <NavBar />
         </main>
         <div className="mainComponent">
-            <h2>Menu</h2>
-            <h3>Today's Courses</h3>
+            <h2>Today's Menu</h2>
+            <h3>{date}</h3>
             <div className="menu">
                 {Object.entries(menu).map(([course, mealName]) => <><h4>{course}</h4><p>{mealName}</p></>)}
             </div>

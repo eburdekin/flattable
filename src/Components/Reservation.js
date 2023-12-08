@@ -1,8 +1,10 @@
-export default function Reservation({reservation, handleDelete, handleEdit}) {
+export default function Reservation({reservation, handleDelete, handleEdit, seatTable}) {
+
+    const handleSeatClick = (reservation) => seatTable(reservation)
 
     return <>
     <tr>
-        <td><img src="../images/table.png" width="20px" alt="table" /></td>
+        <td><img src="../images/table.png" width="20px" alt="table" onClick={(e) => handleSeatClick(reservation)}/></td>
        <td>{reservation.name}</td>
        <td>{reservation.party}</td>
        <td>{reservation.time}</td>

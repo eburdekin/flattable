@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 export default function MenuForm({ menu, updateMenu }) {
 
-    const [newMenu, setNewMenu] = useState({})
-
-    useEffect(() => {
-        setNewMenu(menu);
-    }, [menu]);
+    const [newMenu, setNewMenu] = useState(menu)
 
     const handleChange = (e) => {
         const name = e.target.name;
@@ -22,9 +18,8 @@ export default function MenuForm({ menu, updateMenu }) {
     const style = {
         'fontFamily': 'Roboto',
         'padding': '2px',
-        'margin': '5px',
+        'margin': '10px',
         'width': '200px',
-        'fontWeight': 'bold',
     }
 
     const buttonStyle = {
@@ -45,7 +40,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Breakfast"
                 name="Breakfast"
-                value={newMenu.Breakfast}
+                value={menu.Breakfast || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -54,7 +49,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Lunch"
                 name="Lunch"
-                value={newMenu.Lunch}
+                value={menu.Lunch || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -63,7 +58,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Dinner"
                 name="Dinner"
-                value={newMenu.Dinner}
+                value={menu.Dinner || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -72,7 +67,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Dessert"
                 name="Dessert"
-                value={newMenu.Dessert}
+                value={menu.Dessert || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -81,7 +76,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Special"
                 name="Special"
-                value={newMenu.Special}
+                value={menu.Special || ""}
                 onChange={handleChange}
                 style={style} ></input>
             <br></br>

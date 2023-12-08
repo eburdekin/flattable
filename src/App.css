@@ -1,12 +1,20 @@
 body {
   background: #30D9BA;
-  font-family: 'Roboto';
+  font-family: Roboto;
   height: 100%;
+}
+
+main {
+  margin: 10px;
 }
 
 div {
   background-color: #30D9BA;
   border-radius: 25px;
+}
+
+label {
+  font-family: Righteous;
 }
 
 .sidebar {
@@ -17,10 +25,9 @@ div {
   flex-direction: column;
   text-align: center;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 10px;
   padding-top: 25px;
-  /* background-color: #177359; */
   border-radius: 25px;
   border: 5px solid #177359;
 }
@@ -33,7 +40,7 @@ div {
 
 .header {
   text-align: center;
-  font-family: 'Righteous';
+  font-family: Righteous;
   display: flex;
   flex-direction: column;
   margin-left: 22%;
@@ -64,7 +71,7 @@ h1 {
 }
 
 .mainComponent h2 {
-  font-family: 'Righteous';
+  font-family: Righteous;
   font-size: 34px;
   color: #400235;
 }
@@ -75,12 +82,6 @@ h1 {
   align-items: center;
   height: 100px;
   width: 300px;
-}
-
-.inputContainer {
-  justify-content: right;
-  height: 200px;
-  width: 200px;
 }
 
 .reservationForm {
@@ -101,7 +102,6 @@ h1 {
 
 .reservationTable {
   margin: auto;
-  width: 75%;
   border: 2px solid #177359;
   padding: 5px;
   border-radius: 5px;
@@ -110,6 +110,7 @@ h1 {
 
 .reservationTable td {
   height: 30px;
+  width: 100px;
 }
 
 .menu {
@@ -124,8 +125,38 @@ h1 {
 }
 
 .menu h4{ 
-  font-family: 'Righteous';
+  font-family: Righteous;
   font-size: 22px;
   font-weight: normal;
   color: #BF41B7;
+}
+
+.table-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 85%;
+}
+
+.seated-table {
+  width: 150px;
+  height: 150px;
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+.seated-table p {
+  font-family: Righteous;
+  color: #400235;
+  font-size: 18px;
+  height: 30px;
+}
+
+.seated-table span {
+  font-family: Roboto;
+}
+
+.smaller {
+  font-size: 12px;
+  font-weight: bold;
 }

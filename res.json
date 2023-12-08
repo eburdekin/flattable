@@ -7,7 +7,7 @@
       "time": "07:00",
       "occasion": "anniversary",
       "restrictions": "vegan",
-      "seated": "false"
+      "seated": true
     },
     {
       "name": "Eileen",
@@ -16,7 +16,7 @@
       "occasion": "graduation",
       "restrictions": "gluten-free",
       "id": 2,
-      "seated": "false"
+      "seated": true
     },
     {
       "name": "Woody",
@@ -25,7 +25,7 @@
       "occasion": "women's group",
       "restrictions": "dairy free",
       "id": 3,
-      "seated": "false"
+      "seated": true
     },
     {
       "name": "Dawn",
@@ -34,7 +34,7 @@
       "occasion": "date",
       "restrictions": "none",
       "id": 4,
-      "seated": "false"
+      "seated": true
     },
     {
       "name": "David Butterton",
@@ -42,7 +42,8 @@
       "time": "17:30",
       "occasion": "ayurveda ",
       "restrictions": "gluten-free",
-      "id": 5
+      "id": 5,
+      "seated": true
     },
     {
       "name": "Emma",
@@ -50,7 +51,8 @@
       "time": "4:00",
       "occasion": "Birthday",
       "restrictions": "None",
-      "id": 6
+      "id": 6,
+      "seated": true
     }
   ]
 }
