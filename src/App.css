@@ -1,6 +1,6 @@
 body {
   background: #30D9BA;
-  font-family: 'Roboto';
+  font-family: Roboto;
   height: 100%;
 }
 
@@ -14,7 +14,7 @@ div {
 }
 
 label {
-  font-weight: bold;
+  font-family: Righteous;
 }
 
 .sidebar {
@@ -41,7 +41,7 @@ label {
 
 .header {
   text-align: center;
-  font-family: 'Righteous';
+  font-family: Righteous;
   display: flex;
   flex-direction: column;
   margin-left: 22%;
@@ -72,7 +72,7 @@ h1 {
 }
 
 .mainComponent h2 {
-  font-family: 'Righteous';
+  font-family: Righteous;
   font-size: 34px;
   color: #400235;
 }
@@ -126,7 +126,7 @@ h1 {
 }
 
 .menu h4{ 
-  font-family: 'Righteous';
+  font-family: Righteous;
   font-size: 22px;
   font-weight: normal;
   color: #BF41B7;

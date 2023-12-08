@@ -40,7 +40,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Breakfast"
                 name="Breakfast"
-                value={menu.Breakfast}
+                value={menu.Breakfast || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -49,7 +49,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Lunch"
                 name="Lunch"
-                value={menu.Lunch}
+                value={menu.Lunch || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -58,7 +58,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Dinner"
                 name="Dinner"
-                value={menu.Dinner}
+                value={menu.Dinner || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -67,7 +67,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Dessert"
                 name="Dessert"
-                value={menu.Dessert}
+                value={menu.Dessert || ""}
                 onChange={handleChange}
                 style={style}
             ></input><br></br>
@@ -76,7 +76,7 @@ export default function MenuForm({ menu, updateMenu }) {
                 type="text"
                 placeholder="Special"
                 name="Special"
-                value={menu.Special}
+                value={menu.Special || ""}
                 onChange={handleChange}
                 style={style} ></input>
             <br></br>
