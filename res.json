@@ -44,15 +44,6 @@
       "restrictions": "gluten-free",
       "id": 5,
       "seated": true
-    },
-    {
-      "name": "Emma",
-      "party": "5",
-      "time": "4:00",
-      "occasion": "Birthday",
-      "restrictions": "None",
-      "id": 6,
-      "seated": true
     }
   ]
 }

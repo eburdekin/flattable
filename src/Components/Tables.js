@@ -1,6 +1,4 @@
-export default function Tables({tables = [], seatTable}) {
-
-    const handleSeatClick = (table) => seatTable(table)
+export default function Tables({tables = [], seatTable, handleDelete}) {
 
     const buttonStyle = {
         'fontFamily': 'Roboto',
@@ -20,7 +18,7 @@ export default function Tables({tables = [], seatTable}) {
             <br />
             <span className="smaller">Party of {table.party}</span>
             <br />
-            <button type="button" style={buttonStyle} onClick={(e) => handleSeatClick(table)}>Clear Table</button>
+            <button type="button" style={buttonStyle} onClick={(e) => handleDelete(table.id)}>Clear Table</button>
             </div>
       ));
 

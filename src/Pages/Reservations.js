@@ -135,7 +135,7 @@ export default function Reservations() {
                         </tbody>
                     </table>
                                 <br></br>
-                    <Tables tables={reservations.filter(res => res.seated)} seatTable={seatTable} />
+                    <Tables tables={reservations.filter(res => res.seated)} handleDelete={handleDelete} />
 
                 </div>
 
