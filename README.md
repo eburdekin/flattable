@@ -16,13 +16,12 @@
 - [x] At least 5 components
 - [x] At least 3 client-side routes & include navbar
 - [x] API for backend, using GET/POST
-- [x] Some styling
 
 ### Stretch
 
 - [x] PATCH - Update reservation
 - [x] DELETE - Delete/cancel reservation
-- [ ] Additional API for menu
-- [ ] PATCH - Update menu/specials
+- [x] Additional API for menu
+- [x] PATCH - Update menu/specials
 
 
