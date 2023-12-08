@@ -10,20 +10,25 @@ div {
 }
 
 .sidebar {
-  height: 100%;
-  width: 20%;
+  height: 90%;
+  width: 220px;
   position: fixed;
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: larger;
   position: absolute;
   left: 0;
   top: 0;
-  padding-top: 40px;
+  padding-top: 25px;
   /* background-color: #177359; */
   border-radius: 25px;
   border: 5px solid #177359;
+}
+
+.sidebar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
