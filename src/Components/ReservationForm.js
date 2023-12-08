@@ -1,36 +1,20 @@
 import React, { useState, useEffect } from 'react'
 
-export default function ReservationForm({ handleAddSubmit, editedReservation }) {
+export default function ReservationForm({ handleAddSubmit, reservation, setReservation, editing }) {
 
-    const [newReservation, setNewReservation] = useState({
-        name: '',
-        party: '',
-        time: '',
-        occasion: '',
-        restrictions: '',
-    })
+
 
     const handleChange = (e) => {
         const name = e.target.name;
         let value = e.target.value
-        setNewReservation({ ...newReservation, [name]: value })
+        setReservation({ ...reservation, [name]: value })
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        handleAddSubmit(newReservation)
+        handleAddSubmit(reservation)
     }
 
-    useEffect(() => {
-        //Update the form fields when the editedReservation prop changes
-        setNewReservation(editedReservation ?? {
-            name: '',
-            party: '',
-            time: '',
-            occasion: '',
-            restrictions: '',
-        });
-    }, [editedReservation])
 
     const style = {
         'fontFamily': 'Roboto',
@@ -56,7 +40,7 @@ export default function ReservationForm({ handleAddSubmit, editedReservation }) 
                 type="text"
                 placeholder="Name"
                 name="name"
-                value={newReservation.name}
+                value={reservation.name}
                 onChange={handleChange}
                 style={style}
                  ></input>
@@ -64,7 +48,7 @@ export default function ReservationForm({ handleAddSubmit, editedReservation }) 
                 type="text"
                 placeholder="Party"
                 name="party" 
-                value={newReservation.party} 
+                value={reservation.party} 
                 onChange={handleChange} 
                 style={style}
                 ></input>
@@ -72,7 +56,7 @@ export default function ReservationForm({ handleAddSubmit, editedReservation }) 
                 type="text"
                 placeholder="Time" 
                 name="time" 
-                value={newReservation.time} 
+                value={reservation.time} 
                 onChange={handleChange} 
                 style={style}
                 ></input>
@@ -80,7 +64,7 @@ export default function ReservationForm({ handleAddSubmit, editedReservation }) 
                 type="text"
                 placeholder="Occasion"
                 name="occasion"
-                value={newReservation.occasion}
+                value={reservation.occasion}
                 onChange={handleChange}
                 style={style}
                 ></input>
@@ -88,13 +72,13 @@ export default function ReservationForm({ handleAddSubmit, editedReservation }) 
                 type="text"
                 placeholder="Restrictions" 
                 name="restrictions" 
-                value={newReservation.restrictions} 
+                value={reservation.restrictions} 
                 onChange={handleChange} 
                 style={style} ></input>
             <br></br>
             <input 
                 type="submit" 
-                value={editedReservation ? "Update Reservation" :  "Add Reservation"}
+                value={editing ? "Update Reservation" :  "Add Reservation"}
                 style={buttonStyle} />
         </form>
     </>
