@@ -7,8 +7,7 @@
       "time": "07:00",
       "occasion": "anniversary",
       "restrictions": "vegan",
-      "seated": "false",
-      "table_image": "fflattable/public/images/table.png"
+      "seated": "false"
     },
     {
       "name": "Eileen",
@@ -17,8 +16,7 @@
       "occasion": "graduation",
       "restrictions": "gluten-free",
       "id": 2,
-      "seated": "false",
-      "table_image": "flattable/public/images/table.png"
+      "seated": "false"
     },
     {
       "name": "Woody",
@@ -27,8 +25,7 @@
       "occasion": "women's group",
       "restrictions": "dairy free",
       "id": 3,
-      "seated": "false",
-      "table_image": "../public/images/table.png"
+      "seated": "false"
     },
     {
       "name": "Dawn",
@@ -37,8 +34,7 @@
       "occasion": "date",
       "restrictions": "none",
       "id": 4,
-      "seated": "false",
-      "table_image": ""
+      "seated": "false"
     },
     {
       "name": "David Butterton",

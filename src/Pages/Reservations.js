@@ -56,9 +56,9 @@ export default function Reservations() {
         }
     };
 
-    // const cancel = () => {
-    //     setReservation(initialReservation)
-    // }
+    const cancel = () => {
+        setReservation(initialReservation)
+    }
 
 
 
@@ -87,7 +87,8 @@ export default function Reservations() {
             <div className="mainComponent">
             <h2>Reservations</h2>
             <h3>New Reservation</h3>
-                <ReservationForm handleAddSubmit={handleAddSubmit} editing={editing} reservation={reservation} setReservation={setReservation}  />
+                <ReservationForm handleAddSubmit={handleAddSubmit} editing={editing} reservation={reservation} setReservation={setReservation}
+                cancel={cancel}  />
             <h3>Existing Reservations</h3>
              <table className="reservationTable">
                 <thead>

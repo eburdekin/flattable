@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-export default function ReservationForm({ handleAddSubmit, reservation, setReservation, editing }) {
+export default function ReservationForm({ handleAddSubmit, reservation, setReservation, editing, cancel }) {
 
 
 
@@ -80,6 +80,7 @@ export default function ReservationForm({ handleAddSubmit, reservation, setReser
                 type="submit" 
                 value={editing ? "Update Reservation" :  "Add Reservation"}
                 style={buttonStyle} />
+                {editing ? (<button type="button" style={buttonStyle} onClick={cancel}>Cancel Update</button>) : null}
         </form>
     </>
 }
