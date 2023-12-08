@@ -54,7 +54,7 @@ export default function Login() {
             <div className="inputContainer">
                 <label>Password</label>
                 <input
-                    type='text'
+                    type='password'
                     className='loginInput'
                     placeholder="Password"
                     style={style}
