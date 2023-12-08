@@ -160,3 +160,7 @@ h1 {
   font-size: 12px;
   font-weight: bold;
 }
+
+.seated {
+  text-decoration: line-through;
+}
