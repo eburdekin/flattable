@@ -15,7 +15,7 @@ export default function Tables({tables = [], seatTable}) {
 
     const seatedTables = tables.map(table => (
         <div key={table.id} className="seated-table">
-            <p>Table #{table.id}</p>
+            <p>Table #{Math.floor(Math.random() * 30)+1}</p>
             <span>{table.name}</span>
             <br />
             <span className="smaller">Party of {table.party}</span>
