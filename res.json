@@ -1,15 +1,6 @@
 {
   "reservations": [
     {
-      "id": 1,
-      "name": "Justin",
-      "party": "3",
-      "time": "07:00",
-      "occasion": "anniversary",
-      "restrictions": "vegan",
-      "seated": true
-    },
-    {
       "name": "Eileen",
       "party": "6",
       "time": "17.50",

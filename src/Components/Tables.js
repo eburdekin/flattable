@@ -1,4 +1,4 @@
-export default function Tables({tables = [], seatTable, handleDelete}) {
+export default function Tables({tables, handleDelete}) {
 
     const buttonStyle = {
         'fontFamily': 'Roboto',
