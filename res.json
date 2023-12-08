@@ -1,15 +1,6 @@
 {
   "reservations": [
     {
-      "name": "Eileen",
-      "party": "6",
-      "time": "17.50",
-      "occasion": "graduation",
-      "restrictions": "gluten-free",
-      "id": 2,
-      "seated": true
-    },
-    {
       "name": "Woody",
       "party": "8",
       "time": "17:30",
@@ -29,11 +20,12 @@
     },
     {
       "name": "Emma",
-      "party": "22",
+      "party": "23",
       "time": "3:00",
       "occasion": "Birthday",
       "restrictions": "None",
-      "id": 5
+      "id": 5,
+      "seated": true
     },
     {
       "name": "Tiffany",
@@ -41,7 +33,17 @@
       "time": "2:00",
       "occasion": "None",
       "restrictions": "Vegan",
-      "id": 6
+      "id": 6,
+      "seated": true
+    },
+    {
+      "name": "Mr. Potato Head",
+      "party": "4",
+      "time": "4:00",
+      "occasion": "Graduation",
+      "restrictions": "Vegetarian",
+      "id": 7,
+      "seated": true
     }
   ]
 }

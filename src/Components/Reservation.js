@@ -4,7 +4,7 @@ export default function Reservation({reservation, handleDelete, handleEdit, seat
 
     return <>
     <tr className={reservation.seated ? "seated" : "unseated"}>
-        <td><img src={reservation.seated ? "../images/x.jpeg" : "../images/table.png"} width="20px" alt="table" onClick={(e) => handleSeatClick(reservation)}/></td>
+        <td>{reservation.seated ? "✔️" : <img src="../images/table.png" width="20px" alt="table" onClick={(e) => handleSeatClick(reservation)}/>}</td>
        <td>{reservation.name}</td>
        <td>{reservation.party}</td>
        <td>{reservation.time}</td>
