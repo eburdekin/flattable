@@ -44,7 +44,6 @@ export default function Login() {
                 <input
                     type='text'
                     className='loginInput'
-                    placeholder='Username'
                     style={style}
                     value={user}
                     onChange={(e) => setUser(e.target.value)}
@@ -53,7 +52,6 @@ export default function Login() {
                 <input
                     type='password'
                     className='loginInput'
-                    placeholder="Password"
                     style={style}
                     value={pass}
                     onChange={(e) => setPass(e.target.value)}

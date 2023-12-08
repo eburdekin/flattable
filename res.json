@@ -6,7 +6,8 @@
       "party": "3",
       "time": "07:00",
       "occasion": "anniversary",
-      "restrictions": "vegan"
+      "restrictions": "vegan",
+      "seated": true
     },
     {
       "name": "Eileen",
@@ -14,7 +15,8 @@
       "time": "17.50",
       "occasion": "graduation",
       "restrictions": "gluten-free",
-      "id": 2
+      "id": 2,
+      "seated": true
     },
     {
       "name": "Woody",
