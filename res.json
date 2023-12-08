@@ -26,6 +26,22 @@
       "restrictions": "none",
       "id": 4,
       "seated": true
+    },
+    {
+      "name": "Emma",
+      "party": "22",
+      "time": "3:00",
+      "occasion": "Birthday",
+      "restrictions": "None",
+      "id": 5
+    },
+    {
+      "name": "Tiffany",
+      "party": "4",
+      "time": "2:00",
+      "occasion": "None",
+      "restrictions": "Vegan",
+      "id": 6
     }
   ]
 }

@@ -1,31 +1,24 @@
-export default function Tables({tables, handleDelete}) {
+import Table from './Table.js'
 
-    const buttonStyle = {
-        'fontFamily': 'Roboto',
-        'padding': '4px',
-        'margin': '5px',
-        'backgroundColor': '#BF41B7',
-        'color': 'white',
-        'fontSize': '12px',
-        'fontWeight': 'bold',
-        'borderRadius': '15px'
-    }
+export default function Tables({ tables, handleDelete }) {
 
-    const seatedTables = tables.map(table => (
-        <div key={table.id} className="seated-table">
-            <p>Table #{Math.floor(Math.random() * 30)+1}</p>
-            <span>{table.name}</span>
-            <br />
-            <span className="smaller">Party of {table.party}</span>
-            <br />
-            <button type="button" style={buttonStyle} onClick={(e) => handleDelete(table.id)}>Clear Table</button>
-            </div>
-      ));
+    const generateRandomTableNumber = () => Math.floor(Math.random() * 30) + 1;
 
-    return <>
-    <h3>Seated Tables</h3>
-    <div className="table-container">
-        {seatedTables}
+    const seatedTables = tables.map(table => table)
+
+    return (
+      <>
+        <h3>Seated Tables</h3>
+        <div className="table-container">
+          {seatedTables.map((table) => (
+            <Table 
+              key={table.id} 
+              table={table} 
+              tableNumber = {generateRandomTableNumber()}
+              handleDelete={handleDelete}
+            />
+          ))}
         </div>
-    </>
-}
+      </>
+    );
+  }
