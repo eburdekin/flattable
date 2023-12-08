@@ -1,7 +1,7 @@
 # FlatTable
 
 ## Description
-Flattable is a React-App Reservation system tailored for restraunt employees to track reservations.  This web application provides users with  
+Flattable is a React-App Reservation system tailored for restaurant employees to track reservations. 
 
 ## Development Team
 -**David Butterton** ([@DavidButterton])
@@ -43,7 +43,7 @@ Flattable is a React-App Reservation system tailored for restraunt employees to 
 
  ### User Story 3:  As a User, I want a menu page displaying menu options
 
- -**Description**. Users shall have a menu page that gives them information about the menu options of the day with the option to update the menu.
+ -**Description** Users shall have a menu page that gives them information about the menu options of the day with the option to update the menu.
 
 
 
