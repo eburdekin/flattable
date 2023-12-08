@@ -6,8 +6,7 @@
       "party": "3",
       "time": "07:00",
       "occasion": "anniversary",
-      "restrictions": "vegan",
-      "seated": "false"
+      "restrictions": "vegan"
     },
     {
       "name": "Eileen",
@@ -15,8 +14,7 @@
       "time": "17.50",
       "occasion": "graduation",
       "restrictions": "gluten-free",
-      "id": 2,
-      "seated": "false"
+      "id": 2
     },
     {
       "name": "Woody",
@@ -24,8 +22,7 @@
       "time": "17:30",
       "occasion": "women's group",
       "restrictions": "dairy free",
-      "id": 3,
-      "seated": "false"
+      "id": 3
     },
     {
       "name": "Dawn",
@@ -33,8 +30,7 @@
       "time": "18:15",
       "occasion": "date",
       "restrictions": "none",
-      "id": 4,
-      "seated": "false"
+      "id": 4
     },
     {
       "name": "David Butterton",

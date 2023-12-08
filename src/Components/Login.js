@@ -5,7 +5,7 @@ export default function Login() {
 
     const [user, setUser] = useState('')
     const [pass, setPass] = useState('')
-    const [login, setLogin] = useState(false)
+    const [login, setLogin] = useState('')
 
     function handleLogin() {
         if (user !== '') {
@@ -36,11 +36,10 @@ export default function Login() {
 
     return <div className="mainComponent">
         <h2>Login</h2>
+        <h3>Welcome, {login ? user : "user"}!</h3>
+            <p>Please log in using your Employee Credentials to access today's Reservations and Menu.</p>
         <div className='loginContainer'>
-            <h3>Welcome, {login ? user : "user"}!</h3>
-
             <br />
-            <div className="inputContainer">
                 <label>Username</label>
                 <input
                     type='text'
@@ -50,8 +49,6 @@ export default function Login() {
                     value={user}
                     onChange={(e) => setUser(e.target.value)}
                 />
-            </div>
-            <div className="inputContainer">
                 <label>Password</label>
                 <input
                     type='password'
@@ -61,7 +58,6 @@ export default function Login() {
                     value={pass}
                     onChange={(e) => setPass(e.target.value)}
                 />
-            </div>
             <input type="button" style={buttonStyle} value="Login" onClick={handleLogin}></input>
             {login ? "Login success" : null }
         </div>

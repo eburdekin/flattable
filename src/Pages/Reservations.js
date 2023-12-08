@@ -5,7 +5,6 @@ import NavBar from "../Components/NavBar"
 import ReservationForm from '../Components/ReservationForm'
 import Reservation from '../Components/Reservation'
 
-
 const API = 'http://localhost:6001/reservations'
 
 export default function Reservations() {
@@ -13,9 +12,6 @@ export default function Reservations() {
     const initialReservation = {name: "", party: "", time:"", occasion: "",restrictions:""}
 
     const [reservations, setReservations] = useState([])
-    //const [editedReservation, setEditedReservation] = useState(null)
-
-
     const [reservation, setReservation] = useState(initialReservation)
     const editing = !!reservation.id
     const headers = { "Content-Type": "application/json" }
@@ -60,9 +56,6 @@ export default function Reservations() {
         setReservation(initialReservation)
     }
 
-
-
-    
     const handleDelete = (id) => {
         fetch(`${API}/${id}`, {
             method: 'DELETE',
@@ -77,7 +70,6 @@ export default function Reservations() {
         setReservation(reservation)
     }
 
-
     return (
         <>
         <main>
@@ -89,12 +81,12 @@ export default function Reservations() {
             <h3>New Reservation</h3>
                 <ReservationForm handleAddSubmit={handleAddSubmit} editing={editing} reservation={reservation} setReservation={setReservation}
                 cancel={cancel}  />
-            <h3>Existing Reservations</h3>
+            <h3>Today's Reservations</h3>
              <table className="reservationTable">
                 <thead>
                     <tr>
                         <th>
-                            <h4>Table</h4>
+                            <h4>Seat Table</h4>
                         </th>
                         <th>
                             <h4>Name</h4>

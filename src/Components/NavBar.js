@@ -14,7 +14,7 @@ export default function NavBar() {
     return <>
         <nav className="sidebar">
             <img src="../images/logo.png"
-            width="110px"
+            width="125px"
             alt="logo"
             />
             <br></br>
