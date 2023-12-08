@@ -6,7 +6,7 @@ export default function Reservation({reservation, handleDelete, handleEdit}) {
 
     return <>
     <tr>
-        <td><img src="../images/table.png" width="20px" /></td>
+        <td><img src="../images/table.png" width="20px" alt="table" /></td>
        <td>{reservation.name}</td>
        <td>{reservation.party}</td>
        <td>{reservation.time}</td>
