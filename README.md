@@ -1,10 +1,12 @@
 # FlatTable
 
-## Phase 2 Project - David Butterton, Eileen Burdekin
+## David Butterton, Eileen Burdekin
+
+![Login screenshot](./public/images/login.png)
 
 ## Example User Flow
 
-![User flow](/src/userflow.png)
+![User flow](./public/images/userflow.png)
 
 ## Deliverables
 
