@@ -26,15 +26,6 @@
       "restrictions": "none",
       "id": 4,
       "seated": true
-    },
-    {
-      "name": "David Butterton",
-      "party": "4",
-      "time": "17:30",
-      "occasion": "ayurveda ",
-      "restrictions": "gluten-free",
-      "id": 5,
-      "seated": true
     }
   ]
 }
