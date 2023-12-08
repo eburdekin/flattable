@@ -46,6 +46,10 @@ div {
   border-radius: 25px;
 }
 
+h1 {
+  text-shadow: #BF41B7 -2px 4px;
+}
+
 .mainComponent {
   display: flex;
   flex-direction: column;
@@ -79,7 +83,15 @@ div {
   width: 200px;
 }
 
-.reservationForm, .menuForm {
+.reservationForm {
+  margin: auto;
+  width: 450px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menuForm {
   margin: auto;
   width: 50%;
   padding: 10px;

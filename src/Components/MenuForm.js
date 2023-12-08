@@ -35,6 +35,7 @@ export default function MenuForm({ menu, updateMenu }) {
         'color': 'white',
         'fontSize': '14px',
         'fontWeight': 'bold',
+        'borderRadius': '15px'
     }
 
     return <>

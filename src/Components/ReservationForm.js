@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from 'react'
-
 export default function ReservationForm({ handleAddSubmit, reservation, setReservation, editing, cancel }) {
-
-
 
     const handleChange = (e) => {
         const name = e.target.name;
@@ -14,7 +10,6 @@ export default function ReservationForm({ handleAddSubmit, reservation, setReser
         e.preventDefault();
         handleAddSubmit(reservation)
     }
-
 
     const style = {
         'fontFamily': 'Roboto',
@@ -32,6 +27,7 @@ export default function ReservationForm({ handleAddSubmit, reservation, setReser
         'color': 'white',
         'fontSize': '14px',
         'fontWeight': 'bold',
+        'borderRadius': '15px'
     }
 
     return <>
