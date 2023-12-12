@@ -33,6 +33,12 @@ export default function Menu() {
     current.getMonth() + 1
   }/${current.getFullYear()}`;
 
+  const style = {
+    fontFamily: "Roboto",
+    padding: "2px",
+    fontSize: "16px",
+  };
+
   const buttonStyle = {
     fontFamily: "Roboto",
     padding: "6px",
@@ -60,6 +66,7 @@ export default function Menu() {
               {selectedField === course ? (
                 <>
                   <input
+                    style={style}
                     type="text"
                     value={mealName}
                     onChange={(e) => {
@@ -67,7 +74,7 @@ export default function Menu() {
                       updatedMenu[course] = e.target.value;
                       handleUpdate(updatedMenu);
                     }}
-                  />
+                  />{" "}
                   <button
                     style={buttonStyle}
                     onClick={() => setSelectedField(course)}
@@ -83,21 +90,21 @@ export default function Menu() {
                 </>
               ) : (
                 <>
-                  <p>{mealName}</p>
-                  <button
-                    style={buttonStyle}
-                    onClick={() => setSelectedField(course)}
-                  >
-                    Edit
-                  </button>
+                  <p>
+                    {mealName}{" "}
+                    <button
+                      style={buttonStyle}
+                      onClick={() => setSelectedField(course)}
+                    >
+                      Edit
+                    </button>
+                  </p>
                 </>
               )}
             </>
           ))}
         </div>
         <br></br>
-        {/* <h3>Update Menu</h3>
-            <MenuForm menu={menu} updateMenu={updateMenu} /> */}
         <br></br>
       </div>
     </>
