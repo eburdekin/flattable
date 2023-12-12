@@ -37,6 +37,8 @@ export default function Menu() {
     fontFamily: "Roboto",
     padding: "2px",
     fontSize: "16px",
+    width: "225px",
+    textAlign: "center",
   };
 
   const buttonStyle = {
@@ -75,12 +77,6 @@ export default function Menu() {
                       handleUpdate(updatedMenu);
                     }}
                   />{" "}
-                  <button
-                    style={buttonStyle}
-                    onClick={() => setSelectedField(course)}
-                  >
-                    Edit
-                  </button>
                   <button
                     style={buttonStyle}
                     onClick={() => setSelectedField(!selectedField)}
