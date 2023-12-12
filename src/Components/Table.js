@@ -1,4 +1,4 @@
-export default function Table({ table, tableNumber, handleDelete }) {
+export default function Table({ table, handleDelete }) {
   const buttonStyle = {
     fontFamily: "Roboto",
     padding: "4px",
@@ -12,7 +12,7 @@ export default function Table({ table, tableNumber, handleDelete }) {
 
   return (
     <div className="seated-table">
-      <p>Table #{tableNumber}</p>
+      <p>Table #{table.tableNumber}</p>
       <span>{table.name}</span>
       <br />
       <span className="smaller">Party of {table.party}</span>
